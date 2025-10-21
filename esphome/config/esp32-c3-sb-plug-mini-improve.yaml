@@ -42,6 +42,14 @@ esp32_improv:
   authorizer: power_button
   status_indicator: white_output
 
+api:
+
+web_server:
+  id: component_web_server
+  auth:
+    username: esphome
+    password: esphomepass
+
 binary_sensor:
   # Detects that a button on the Plug Mini unit has been pressed
   - platform: gpio
