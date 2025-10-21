@@ -83,7 +83,7 @@ if (args.length) {
 // and it will correctly take care of wohand.com resolution.
 const PAYLOAD_URL = 'https://github.com/brettmiller/switchbota-esphome/releases/download/latest/firmware.factory.bin';
 const PAYLOAD_PATH = path.join(__dirname, 'bin', 'payload.bin');
-const PAYLOAD_BIN_MD5 = '93cf99095367e539a22c1acd4c3252a3';
+const PAYLOAD_BIN_MD5 = 'b12433f073dd46ba47b019ad3ac7ead2';
 const APP_URL = 'https://github.com/brettmiller/switchbota-esphome/releases/download/latest/switchbota.bin';
 const APP_PATH = path.join(__dirname, 'bin', 'app.bin');
 const APP_BIN_MD5 = '1b4a82de77e1a7b57f6ae477e76f699b';
