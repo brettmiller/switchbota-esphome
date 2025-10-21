@@ -81,10 +81,10 @@ if (args.length) {
 }
 // You can temporarily set your router's DNS to the host this host's IP
 // and it will correctly take care of wohand.com resolution.
-const PAYLOAD_URL = 'https://github.com/brettmiller/switchbota/releases/latest/download/firmware.factory.bin';
+const PAYLOAD_URL = 'https://github.com/brettmiller/switchbota-esphome/releases/download/latest/firmware.factory.bin';
 const PAYLOAD_PATH = path.join(__dirname, 'bin', 'payload.bin');
 const PAYLOAD_BIN_MD5 = '732259c30432144bea566f714e3dc1c0';
-const APP_URL = 'https://github.com/brettmiller/switchbota/releases/latest/download/switchbota.bin';
+const APP_URL = 'https://github.com/brettmiller/switchbota-esphome/releases/download/latest/switchbota.bin';
 const APP_PATH = path.join(__dirname, 'bin', 'app.bin');
 const APP_BIN_MD5 = '1b4a82de77e1a7b57f6ae477e76f699b';
 (async function () {
