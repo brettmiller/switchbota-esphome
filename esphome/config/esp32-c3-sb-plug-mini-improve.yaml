@@ -1,6 +1,6 @@
 substitutions:
-  device_name: esp32-c3-sb-plug-mini
-  name: esp32-c3-sb-plug-mini
+  device_name: sb-plug-mini
+  name: sb-plug-mini
   description: esphome esp32-c3 switchbot plug mini (basic esp32-c3 just the boad with improv)
 
 packages:
@@ -26,12 +26,18 @@ ota:
      id: component_ota
   #- platform: http_request
   #  id: ota_http_request
+  - platform: web_server
+    id: ota_web_server
 
 wifi:
   on_connect:
     - delay: 5s  # Gives time for improv results to be transmitted
     - ble.disable:
     #- script.execute: control_leds
+  #ap: # Not needed with improv, it will restart improv after 1min if wifi is no longer connected
+  #  ssid: "${device_name}_ap"
+  #  password: "esphomepass"
+  #  ap_timeout: 2min
 
 improv_serial:
 
